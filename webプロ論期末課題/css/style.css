@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/*全てのWebページに適用される*/
+html{
+  font-family: sans-serif;
+}
+html * {
+  box-sizing: border-box;
+}
+body{
+  background-color: #cbf5ed;
+}
+h2{
+  color: #1c6da1;
+  font-size: 22px;
+  border-bottom: 4px dotted #1c6da1;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+h3{
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+p{
+  line-height: 1.6;
+}
+a:limk {
+  color: #d25833;
+  text-decoration: none;
+}
+a:visited {
+  color: #d25833;
+  text-decoration: none;
+}
+a:hover {
+  color: # e3937a;
+  text-decoration: none;
+}
+a:active {
+  color: # ff6a3b;
+  text-decoration: none;
+}
+.nav a:limk {
+  color: #d25833;
+  text-decoration: none;
+}
+.nav a:visited {
+  color: #d25833;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: # e3937a;
+  text-decoration: none;
+}
+.nav a:active {
+  color: # ff6a3b;
+  text-decoration: none;
+}
+.wrapper {
+    margin: 0 auto 0 auto;
+    max-width: 1000px;
+}
+
+.spot-item {
+  display: flex;
+  border-bottom: 1px dashed #bec2c7;
+  padding: 20px 8px;
+}
+.spot-photo {
+  margin-right: 16px;
+}
+body {
+  margin 0 0 0 0;
+  background-color: #cbf5ed;
+}
+.wrapper {
+    margin: 0 auto 0 auto;
+    max-width: 1000px;
+}
+
+
+/* 全てのWebページに適用される - ヘッダー　- */
+.logo {
+  margin: 50px 0 50px 0;
+  line-height: 0;
+  text-align: center;
+}
+.logo{
+  margin: 0 0 0 0;
+  padding: 20px 10px 15px 20px;
+  background-image: url(../images/more-leaves.png);
+  background-repeat: repeat-x;
+}
+.footer{
+  margin: 0 0 0 0;
+  padding: 20px 10px 15px 20px;
+  background-image: url(../images/more-leaves.png);
+  background-repeat: repeat-x;
+}
+.logo img {
+  width: 200px;
+}
+.nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 45px;
+}
+/*　個別のスタイル　*/
+/* home.html */
+.IMG_7222.jpeg {
+  margin: 20px 0 0 0;
+}
+.item {
+  margin: 0;
+}
+/*america,hokkaido,ginga.html*/
+.spot-photo {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+.clear {
+  clear: both;
+}
+.info {
+  border-collapse: collapse;
+}
+.info th, .info td {
+  padding: 8px;
+  border: 1px solid #bec2c7;
+  text-align: left;
+}
+.info th{
+  background-color: #88f071;
+  width: 90px;
+  color: #3f5170;
+  vertical-align: top;
+}
+.spot-item{
+  display: flex;
+  border-bottom: 1px dashed #bec2c7;
+  padding: 20px 8px;
+}
+.spot-photo{
+  margin-right: 16px;
+}
+/*america.html*/
+.map {
+  text-align: center;
+}
+/*スマホ向けcss*/
+@media(max-width: 767px) {
+
+  /*ナビゲーション*/
+  .wrapper {
+    margin: 0 8px;
+  }
+  .nav {
+    background-color: #dfddda;
+  }
+  .nav li {
+    display: block;
+  }
+}
+/* contact.html */
+select {
+  width: 100%;
+}
+input[name="subject"] {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+}
+input[type="submit"] {
+  margin: 20px 0;
+  width: 100%;
+}

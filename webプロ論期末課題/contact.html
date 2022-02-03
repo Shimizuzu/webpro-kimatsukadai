@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width, initial-scal=1">
+    <title>お問い合わせへようこそ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/checker.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--ヘッダー情報-->
+    <header class="header">
+    <h1 class="logo"><a href="home.html"><img src="images/logo.png" alt="暇つぶし"></a></h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="america.html">サンフランシスコ</a></li>
+        <li><a href="ginga.html">銀河</a></li>
+        <li><a href="hokkaido.html">北海道</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    </header>
+    <!--メイン情報-->
+    <main>
+      <h2>お問い合わせ</h2>
+      <form action="result.html" method="GET" name="contact">
+        <div>
+          <label for="kind">お問い合わせの種類</label><br>
+          <select id="kind" name="kind">
+            <option value="reservation">ご要望</option>
+            <option value="event">感想</option>
+            <option value="contact">その他</option>
+          </select>
+        </div>
+        <div>
+          ご年齢<br>
+          <label><input type="radio" name="old" value="10" checked>10代</label>
+          <label><input type="radio" name="old" value="20">20代</label>
+          <label><input type="radio" name="old" value="30">30代〜40代</label>
+          <label><input type="radio" name="old" value="50">50代〜60代</label>
+          <label><input type="radio" name="old" value="70">70代以上</label>
+        </div>
+        <div>
+          興味のあることは？<br>
+          <label><input type="checkbox" name="which" value="trip">旅行</label>
+          <label><input type="checkbox" name="which" value="anime">アニメ</label>
+          <label><input type="checkbox" name="which" value="chinema">映画</label>
+          <label><input type="checkbox" name="which" value="sport">スポーツ</label>
+          <label><input type="checkbox" name="which" value="camera">カメラ</label>
+          <label><input type="checkbox" name="which" value="car">車</label>
+          <label><input type="checkbox" name="which" value="game">ゲーム</label>
+        </div>
+        <div>
+          <label>メールアドレス<br>
+          <input type="text" name="mail_address" placeholder="example@mail.com"></label>
+        </div>
+        <div>
+          <label>件名<br>
+          <input type="text" name="subject" placeholder="お問い合わせ"></label>
+        </div>
+        <div>
+          <label>具体的な内容<br>
+          <textarea name="message"></textarea></label>
+        </div>
+        <div>
+          <input type="submit" name="submit" value="送信" onClick="return check();">
+        </div>
+        </div>
+      </form>
+    </main>
+    <!--フッター情報-->
+    <footer class="footer">
+    <p>&copy;Copyright All ks. rights reserved.</p>
+    </footer>
+    </div>
+  </body>
+</html>
